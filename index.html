@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--WRAPPER DIV-->
+
+      <div class="contentDiv">
+        <!--  CONTENT DIV -->
+
+        <!-- <h1>TAX CALCULATOR</h1> -->
+        <!-- //// -->
+        <!-- 1 -->
+        <div class="div">
+          <span
+            >Enter gross annual income
+            <i class="fa-solid fa-circle-exclamation one show"
+              ><span class="onedisplay show"
+                >Please enter a valid number</span
+              ></i
+            >
+            <span class="grossIncome show"
+              ><i class="fa-regular fa-circle-question show"></i>
+              <p class="info show">
+                Gross annual income <br />is your total <br />
+                salary in a year <br />
+                before any <br />
+                deductions
+              </p>
+            </span>
+          </span>
+          <input
+            id="grossIncome"
+            type="text"
+            name=""
+            placeholder="Enter gross annual income"
+          />
+        </div>
+        <!-- 2 -->
+        <div class="div">
+          <span
+            >Enter extra income
+            <i class="fa-solid fa-circle-exclamation two show">
+              <span class="twodisplay show"
+                >Please enter a valid number</span
+              ></i
+            >
+            <span class="extraIncome show"
+              ><i class="fa-regular fa-circle-question show"></i>
+              <p class="info2 show">
+                Extra Income from <br />Other Sources is <br />
+                any additional income <br />
+                you receive from <br />
+                sources other than <br />
+                your salary.
+              </p>
+            </span></span
+          >
+          <input
+            id="extraIncome"
+            type="text"
+            name=""
+            id=""
+            placeholder="Enter extra income from other sources"
+          />
+        </div>
+        <!-- 3 -->
+        <div class="div">
+          <span
+            >Enter age group
+            <i class="fa-solid fa-circle-exclamation three show"
+              ><span class="threedisplay show"
+                >Please select a valid age group</span
+              ></i
+            >
+
+            <span class="selectincome show"
+              ><i class="fa-regular fa-circle-question show"></i>
+              <p class="info3 show">
+                Kindly select your <br />age group from <br />
+                the options provided <br />
+                below
+              </p>
+            </span></span
+          >
+          <select name="select" id="select">
+            <option value=""></option>
+            <option value="40">&#60; 40</option>
+            <option value="50">&#8805; 40 & &#60; 60</option>
+
+            <option value="60">&#8805; 60</option>
+          </select>
+        </div>
+        <!-- 4 -->
+        <div class="div">
+          <span
+            >Enter total applicable deductions
+            <i class="fa-solid fa-circle-exclamation four show"
+              ><span class="fourdisplay show"
+                >Please enter a valid number</span
+              ></i
+            >
+            <span class="applicableDecutions show"
+              ><i class="fa-regular fa-circle-question show"></i>
+              <p class="info4 show">
+                Enter the total amount of deductions applicable to your income.
+              </p>
+            </span></span
+          >
+          <input
+            id="applicableDecutions"
+            placeholder="Enter total applicable deductions "
+            type="text"
+            name=""
+            id=""
+          />
+        </div>
+        <!-- submit button -->
+        <div class="btnDiv">
+          <button id="btn">Submit</button>
+        </div>
+
+        <div class="modal" id="myModal">
+          <div class="brick">
+            <button id="close">&times;</button>
+            <h1 id="taxinfo">Your overall income will be</h1>
+            <p id="income">1234455</p>
+            <p id="ptaxinfo"></p>
+            <p id="tax">88</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- <40 -->
+<!-- ≥40 & < 60 -->
+<!-- ≥ 60 -->
