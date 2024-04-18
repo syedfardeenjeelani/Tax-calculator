@@ -19,7 +19,7 @@ This project aims to create a tax calculator web application to assist users in 
 
 To run the application locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/tax-calculator.git`
+1. Clone the repository: `git clone https://github.com/syedfardeenjeelani/tax-calculator.git`
 2. Navigate to the project directory: `cd tax-calculator`
 3. Open the `index.html` file in your preferred web browser.
 
